@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" href="Style.css"> 
+    <style>
+        body {
+            background: linear-gradient(purple, blue);
+        }
+
+        .btn {
+            position: relative;
+            right: -43%;
+            top: 45%;
+            font-size: 20px;
+            width: 250px;
+            height: 65px;
+            border: 3px black solid;
+            border-radius: 15px;
+            background-color: blue;
+            color: white;
+            transition: 0.5s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+            .btn:hover {
+                transform: translateY(-150px);
+            }
+
+        .T {
+            opacity: 0;
+        }
+
+        .btn:hover .N {
+            opacity: 0;
+        }
+
+        .btn:hover .T {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+      function b1() {
+          alert("Just a reminder that you have exams—go study!");
+      }
+    </script>
+    <button class="btn" onclick="b1()">
+        <span class="N">click me</span>
+        <span class="T">bro im here!</span>
+    </button>
+</body>
+</html>
